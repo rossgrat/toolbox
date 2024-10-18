@@ -25,7 +25,7 @@ $ psql postgres
 # CREATE DATABASE rossgrat;
 # ALTER ROLE rossgrat WITH SUPERUSER;
 # ALTER ROLE rossgrat WITH PASSWORD 'password';
-``1
+```
 
 ### CLI
 - You can exeute SQL code directly from the command line using `psql -c 'SELECT ...'`
