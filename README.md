@@ -15,20 +15,17 @@ When designing a data driven client, you may want to filter data. Filtering is e
 ### Quick Links
 These are some quick links to postgres documentation that I find myself using often.
 - [Roles and Privileges](https://www.postgresql.org/docs/17/sql-grant.html)
-  [SELECT](https://www.postgresql.org/docs/17/sql-select.html)
+- [SELECT](https://www.postgresql.org/docs/17/sql-select.html)
 
 ### New Install
-- Upon installing a new version of postgres the first thing you will need to to is create a role and a database for that role for whatever your username on your local machine is. Y
-- You'll also probably want to make yourself a [superuser](https://www.postgresql.org/docs/current/role-attributes.html).
-- You may additionally want to set a password for your role for use in database URLS such as `postgres://rossgrat:password@localhost:5432/test-database`
+Upon installing a new version of postgres the first thing you will need to to is create a role and a database for that role for whatever your username on your local machine is. You'll also probably want to make yourself a [superuser](https://www.postgresql.org/docs/current/role-attributes.html). You may additionally want to set a password for your role for use in database URLS such as `postgres://rossgrat:password@localhost:5432/test-database`. All of those things are taken care of in the below sequence of commands.
 ```
 $ psql postgres
 # CREATE ROLE rossgrat;
 # CREATE DATABASE rossgrat;
 # ALTER ROLE rossgrat WITH SUPERUSER;
 # ALTER ROLE rossgrat WITH PASSWORD 'password';
-```
-- 
+``1
 
 ### CLI
 - You can exeute SQL code directly from the command line using `psql -c 'SELECT ...'`
