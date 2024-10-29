@@ -46,6 +46,8 @@ $ psql postgres
     ```
 
 # Programming Languages
+
+## General
 - Many languages have getters and setters that allow class variables to execute functions when they are updated. This can be useful for dynamically changing variables or updating. Examples in Typescript and Swift are below.
     ```typescript
     // Typescript
@@ -81,6 +83,13 @@ $ psql postgres
         }
     }
     ```
+
+  ## Go
+  - Go is organized by modules, here are some helpful links for organizing Go projects
+      - [Creating and using modules](https://go.dev/blog/using-go-modules)
+      - [Calling a module from another module](https://go.dev/doc/tutorial/call-module-code)
+      - [Module import paths](https://pkg.go.dev/cmd/go#hdr-Remote_import_paths)
+      - [Ideas for a Go project structure](https://eli.thegreenplace.net/2019/simple-go-project-layout-with-modules/)
 
 # Cloud Hosting
 
