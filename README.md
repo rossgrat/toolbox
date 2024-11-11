@@ -4,8 +4,18 @@
 
 # Theory
 
-## Client Design
-### Filtering
+## Programming Lanuages
+### Compilers
+- A compiler is a program that translates one programming lanuage into another programming language, usually, a higher level programming language is translated by a compiler to a lower level programming language, such as assembly or machine code
+- When building a new programming language, the initial compiler for the language must be written using a different programming language. This is called [bootstrapping a compiler](https://en.wikipedia.org/wiki/Bootstrapping_(compilers)) Ex. the first compiler for Go was written in C. Once Go was stable, the Go compiler code that was written in C was rewritten in Go.
+
+### Interpreted vs. Compiled
+- Languages are often said to be either interpreted or compiled, but this is not strictly true. An **implementation** of a language can either be interpreted or compiled.
+- Interpreted implementations of a language will move line by line through the language and transform it into some intermediary, platform agnostic [bytecode / p-code (portable code)](https://en.wikipedia.org/wiki/Bytecode). This bytecode can then either be run on a virtual machine ([portable code machine (p-code machine)](https://en.wikipedia.org/wiki/P-code_machine) that is specifically designed to execute the bytecode, OR compiled with [Just-In-Time (JIT)](https://en.wikipedia.org/wiki/Just-in-time_compilation) compilation into machine code and run directly on the host system.
+  - Note that bytecode is distinct from an [instruction set architecture (ISA)](https://en.wikipedia.org/wiki/Instruction_set_architecture)
+
+# Client Design
+## Filtering
 When designing a data driven client, you may want to filter data. Filtering is easiest to think about in terms of sets. Selecting multiple filter fields can either result in the UNION (OR) of two underlying sets of data, or the INTERSECTION (AND).
   - Ex. - Selecting 'Group 1' and 'Football' can either return all users that are in Group 1 AND play Football, or all users that are in Group 1 OR play Football.
 
