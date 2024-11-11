@@ -7,7 +7,7 @@
 ## Programming Lanuages
 ### Compilers
 - A compiler is a program that translates one programming lanuage into another programming language, usually, a higher level programming language is translated by a compiler to a lower level programming language, such as assembly or machine code
-- When building a new programming language, the initial compiler for the language must be written using a different programming language. This is called [bootstrapping a compiler](https://en.wikipedia.org/wiki/Bootstrapping_(compilers)) Ex. the first compiler for Go was written in C. Once Go was stable, the Go compiler code that was written in C was rewritten in Go ([link](https://github.com/golang/go/tree/master/src/cmd/compile).
+- When building a new programming language, the initial compiler for the language must be written using a different programming language. This is called [bootstrapping a compiler](https://en.wikipedia.org/wiki/Bootstrapping_(compilers)) Ex. the first compiler for Go was written in C. Once Go was stable, the Go compiler code that was written in C was rewritten in Go ([link](https://github.com/golang/go/tree/master/src/cmd/compile)).
 
 ### Interpreted vs. Compiled
 - Languages are often said to be either interpreted or compiled, but this is not strictly true. An **implementation** of a language can either be interpreted or compiled.
