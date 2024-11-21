@@ -100,6 +100,10 @@ $ psql postgres
       - [Calling a module from another module](https://go.dev/doc/tutorial/call-module-code)
       - [Module import paths](https://pkg.go.dev/cmd/go#hdr-Remote_import_paths)
       - [Ideas for a Go project structure](https://eli.thegreenplace.net/2019/simple-go-project-layout-with-modules/)
+   
+  ## Javascript / Typescript
+  - Asynchronicity is a very important concept in JS and TS. When performance async operations use [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), [await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await), and [async](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) for optimally readable code.
+    - Some developers prefer using callbacks (see [this fun article](http://callbackhell.com/) about callback hell for why this is bad). Since there are many instances of this type of code in production repos, it is neccessary to be able to get into the callback mindset when reading some older JS code.
 
 # Cloud Hosting
 
@@ -107,6 +111,9 @@ $ psql postgres
 
 ### S3 Buckets
 - When creating an S3 bucket, a bucket policy, found under the permissions tab for the bucket, is necessary for defining how the objects in the bucket are accessed. Trying to access data in a bucket without this policy will result in errors, most often 403 "AccessDenied" errors
+
+## Heroku
+- When deploying apps to Heroky, it is nececessary to add the remote Git URL for the Heroku app, and push to the `master` branch of that URL for deployment
 
 # IDEs
 
