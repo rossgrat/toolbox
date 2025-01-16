@@ -94,14 +94,14 @@ $ psql postgres
     }
     ```
 
-  ## Go
+  ## [Go](https://go.dev/doc/)
   - Go is organized by modules, here are some helpful links for organizing Go projects
       - [Creating and using modules](https://go.dev/blog/using-go-modules)
       - [Calling a module from another module](https://go.dev/doc/tutorial/call-module-code)
       - [Module import paths](https://pkg.go.dev/cmd/go#hdr-Remote_import_paths)
       - [Ideas for a Go project structure](https://eli.thegreenplace.net/2019/simple-go-project-layout-with-modules/)
    
-  ## Javascript / Typescript
+  ## [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [Typescript](https://www.typescriptlang.org/docs/)
   - Asynchronicity is a very important concept in JS and TS. When performance async operations use [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), [await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await), and [async](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) for optimally readable code.
     - Some developers prefer using callbacks (see [this fun article](http://callbackhell.com/) about callback hell for why this is bad). Since there are many instances of this type of code in production repos, it is neccessary to be able to get into the callback mindset when reading some older JS code.
 
